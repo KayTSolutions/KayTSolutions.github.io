@@ -37,3 +37,54 @@
     .then(function (r) { if (!r.ok) btn.remove(); })
     .catch(function () { btn.remove(); });
 })();
+
+// Email links open a small panel: copy the address, or write in Gmail, Outlook or the mail app.
+(function () {
+  var links = document.querySelectorAll('a[href^="mailto:"]');
+  if (!links.length || !window.HTMLDialogElement) return;
+
+  var dlg = document.createElement('dialog');
+  dlg.className = 'mail-dialog';
+  dlg.innerHTML =
+    '<form method="dialog" class="mail-close"><button aria-label="Close">×</button></form>' +
+    '<h2>Email me</h2>' +
+    '<p class="mail-addr"></p>' +
+    '<div class="mail-actions">' +
+      '<button type="button" class="btn primary mail-copy">Copy address</button>' +
+      '<a class="btn ghost mail-gmail" target="_blank" rel="noopener">Write in Gmail</a>' +
+      '<a class="btn ghost mail-outlook" target="_blank" rel="noopener">Write in Outlook</a>' +
+      '<a class="btn ghost mail-app">Open my email app</a>' +
+    '</div>';
+  document.body.appendChild(dlg);
+
+  var copyBtn = dlg.querySelector('.mail-copy');
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var href = a.getAttribute('href');
+      var addr = href.slice(7).split('?')[0];
+      var subject = (href.match(/[?&]subject=([^&]*)/) || [])[1] || '';
+      var subj = decodeURIComponent(subject);
+      dlg.querySelector('h2').textContent = subj.indexOf('Consultation') === 0 ? 'Book a free consultation' : 'Email me';
+      dlg.querySelector('.mail-addr').textContent = addr;
+      dlg.querySelector('.mail-gmail').href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + addr + '&su=' + subject;
+      dlg.querySelector('.mail-outlook').href = 'https://outlook.live.com/mail/0/deeplink/compose?to=' + addr + '&subject=' + subject;
+      dlg.querySelector('.mail-app').href = href;
+      copyBtn.textContent = 'Copy address';
+      copyBtn.onclick = function () {
+        var done = function () { copyBtn.textContent = 'Copied'; };
+        if (navigator.clipboard) navigator.clipboard.writeText(addr).then(done, function () { selectAddr(); });
+        else selectAddr();
+      };
+      dlg.showModal();
+    });
+  });
+
+  function selectAddr() {
+    var r = document.createRange(); r.selectNodeContents(dlg.querySelector('.mail-addr'));
+    var s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    copyBtn.textContent = 'Press Ctrl+C to copy';
+  }
+})();

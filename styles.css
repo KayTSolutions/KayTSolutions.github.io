@@ -270,3 +270,17 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 .studio-offer .panel { background: var(--ink-raised); border: 1px solid var(--ink-line); border-radius: 12px; padding: clamp(1.25rem, 3vw, 1.75rem); }
 .studio-offer .panel h3 { font-size: var(--step-1); margin-bottom: 1rem; }
 @media (max-width: 860px) { .studio-offer { grid-template-columns: 1fr; } }
+
+/* Email panel */
+.mail-dialog { background: var(--ink-raised); color: var(--paper); border: 1px solid var(--ink-line); border-radius: 16px;
+  padding: 1.75rem; width: min(92vw, 440px); }
+.mail-dialog::backdrop { background: rgba(10, 8, 16, .7); }
+.mail-dialog h2 { font-size: var(--step-2); margin-bottom: .5rem; }
+.mail-addr { font-size: var(--step-1); margin-bottom: 1.25rem; user-select: all; word-break: break-all; }
+.mail-actions { display: grid; gap: .6rem; }
+.mail-actions .btn { justify-content: center; cursor: pointer; font-family: var(--body); }
+.mail-actions .btn.ghost { color: var(--paper); background: transparent; }
+.mail-close { position: absolute; top: .6rem; right: .8rem; }
+.mail-close button { background: none; border: 0; color: var(--muted); font-size: 1.6rem; cursor: pointer; line-height: 1; }
+.mail-close button:hover { color: var(--paper); }
+.mail-dialog { position: fixed; }
