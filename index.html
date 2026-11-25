@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katrīna Taupmane — game & UI designer, production and data</title>
+<meta name="description" content="Katrīna Taupmane (KayTee): game and UI/UX designer who also runs planning, time tracking and data for game teams. Final-year CMGT student at Saxion, open to internships in Europe.">
+<meta property="og:title" content="Katrīna Taupmane — game & UI designer, production and data">
+<meta property="og:description" content="I design game interfaces and keep the team's board moving. Open to internships from early 2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317141f'/%3E%3Crect x='7' y='8' width='8' height='16' rx='2' fill='%23b9a6e8'/%3E%3Crect x='17' y='8' width='8' height='10' rx='2' fill='%2384c9b8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./">Kay<span>Tee</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#studios" class="hide-sm">For studios</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Katrīna<span class="second">Taupmane</span></h1>
+        <p class="lede">I design game interfaces, and I keep the team’s board moving.</p>
+        <p class="status">Final-year Game Design student at Saxion, based in Enschede. Looking for an internship in game design, UX, production or data from January or February 2027, anywhere in Europe.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">See my work</a>
+          <a class="btn ghost" href="mailto:katrina.taupmane@gmail.com">Email me</a>
+          <a class="btn ghost" href="Katrina-Taupmane-CV.pdf" id="cv-btn" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="board" aria-label="A small task board showing the two halves of my work">
+        <div class="col">
+          <h4>In progress</h4>
+          <div class="card">
+            <span class="label design"></span>
+            <p>Zero-instruction onboarding for a VR physio game</p>
+            <div class="meta"><span>UI & UX</span><span>Quest 3</span></div>
+          </div>
+          <div class="card live">
+            <span class="label prod"></span>
+            <p>Daily time report for 18 people</p>
+            <div class="meta"><span>Tracking</span><span class="timer" id="timer" aria-label="time tracked">03:42:17</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Done</h4>
+          <div class="card done">
+            <span class="label prod"></span>
+            <p>Trello time tracking, from zero</p>
+          </div>
+          <div class="card done">
+            <span class="label design"></span>
+            <p>Historical game HUD and menus</p>
+          </div>
+          <div class="card done">
+            <span class="label prod"></span>
+            <p>Start my own company</p>
+          </div>
+        </div>
+        <div class="board-legend">
+          <span><i style="background:var(--lilac)"></i>Design</span>
+          <span><i style="background:var(--glass)"></i>Production & data</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>Half of my work is design, half is making teams run. The colour shows which.</p>
+      </div>
+
+      <div class="work">
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="800" height="500" fill="#1d2a2a"/>
+              <g fill="#203634">
+                <rect x="60" y="60" width="200" height="380" rx="14"/><rect x="300" y="60" width="200" height="380" rx="14"/><rect x="540" y="60" width="200" height="380" rx="14"/>
+              </g>
+              <g fill="#2c4b47">
+                <rect x="78" y="100" width="164" height="54" rx="8"/><rect x="78" y="166" width="164" height="54" rx="8"/><rect x="78" y="232" width="164" height="54" rx="8"/>
+                <rect x="318" y="100" width="164" height="54" rx="8"/>
+                <rect x="558" y="100" width="164" height="54" rx="8"/><rect x="558" y="166" width="164" height="54" rx="8"/>
+              </g>
+              <rect x="318" y="100" width="164" height="54" rx="8" fill="none" stroke="#84c9b8" stroke-width="2"/>
+              <g fill="#84c9b8"><rect x="78" y="80" width="60" height="8" rx="4"/><rect x="318" y="80" width="90" height="8" rx="4"/><rect x="558" y="80" width="44" height="8" rx="4"/></g>
+              <path d="M400 330 L400 400 L640 400" fill="none" stroke="#84c9b8" stroke-width="2" stroke-dasharray="6 8"/>
+              <circle cx="640" cy="400" r="9" fill="#84c9b8"/>
+            </svg>
+            <img src="images/time-tracking.jpg" alt="Make scenario and sample sheet from the time-tracking system" onerror="this.remove()">
+          </figure>
+          <div>
+            <div class="kind prod"><i></i>Production & data</div>
+            <h3><a href="time-tracking.html">Time tracking that runs itself, for a game studio of 18</a></h3>
+            <p>Denda Games had no time tracking at all. I built a system on top of the Trello boards the team already used: every card move is logged, and management gets a daily report by email. It worked so well that it became my first client.</p>
+            <ul class="facts"><li>Trello</li><li>Make</li><li>Google Sheets</li><li>Apps Script</li><li>Notion</li></ul>
+            <a class="more" href="time-tracking.html">Read the case study</a>
+          </div>
+        </article>
+
+        <div id="studios" class="studio-offer">
+      <div>
+        <h2>Running your studio on Trello?</h2>
+        <p style="margin-top:1.25rem">Through my company, KTS (KayTSolutions), I set up time tracking for small and indie teams that already plan in Trello. Nobody has to start a timer or fill in a timesheet: the board you already use becomes the data.</p>
+        <p>Denda Games has used it since early 2026, and I still make improvements when they ask.</p>
+      </div>
+      <div class="panel">
+        <h3>What you get</h3>
+        <ul class="checks">
+          <li>Time logged automatically when cards move between lists</li>
+          <li>A daily email with who worked on what, and where the gaps are</li>
+          <li>Estimates compared with real hours, so planning gets better</li>
+          <li>Holidays, leave and working hours taken into account</li>
+        </ul>
+        <a class="btn primary" href="mailto:katrina.taupmane@gmail.com?subject=Consultation%3A%20time%20tracking%20for%20our%20studio">Book a free consultation</a>
+      </div>
+    </div>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="800" height="500" fill="#221d31"/>
+              <path d="M0 360 L260 300 L540 300 L800 360 L800 500 L0 500Z" fill="#1b1727"/>
+              <path d="M260 300 L260 90 L540 90 L540 300" fill="none" stroke="#3a3350" stroke-width="2"/>
+              <path d="M0 360 L260 300 M800 360 L540 300 M0 40 L260 90 M800 40 L540 90" stroke="#3a3350" stroke-width="2"/>
+              <rect x="300" y="120" width="200" height="60" rx="10" fill="#2e2742" stroke="#b9a6e8" stroke-width="2"/>
+              <rect x="325" y="143" width="150" height="14" rx="7" fill="#b9a6e8" opacity=".7"/>
+              <g fill="none" stroke="#b9a6e8" stroke-width="2"><circle cx="230" cy="230" r="26"/><circle cx="580" cy="210" r="22"/><circle cx="520" cy="260" r="16"/></g>
+              <path d="M230 256 q6 20 -4 40 M580 232 q-6 18 4 34 M520 276 q4 12 -2 24" stroke="#6d6290" fill="none" stroke-width="1.5"/>
+              <circle cx="400" cy="250" r="4" fill="#b9a6e8"/><circle cx="400" cy="250" r="14" fill="none" stroke="#b9a6e8" opacity=".4"/>
+            </svg>
+            <img src="images/vr-physio.jpg" alt="Onboarding in the VR physiotherapy fair game" onerror="this.remove()">
+          </figure>
+          <div>
+            <div class="kind design"><i></i>Design, in progress</div>
+            <h3><a href="vr-physio.html">A VR physio game that teaches itself</a></h3>
+            <p>A mixed-reality fair for Meta Quest 3, where every stall is a physiotherapy exercise. I’m the designer on UI and onboarding: how does a 70-year-old who has never worn a headset start playing with no one there to help?</p>
+            <ul class="facts"><li>Quest 3 passthrough</li><li>Unity</li><li>Onboarding research</li><li>Playtests</li></ul>
+            <a class="more" href="vr-physio.html">Read the case study</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <img src="images/donations-app.jpg" alt="Three screens of the gamified donation app: a pixel-art village map, a category page with badges, and a donor leaderboard">
+          </figure>
+          <div>
+            <div class="kind both"><i></i><i></i>UX & game design</div>
+            <h3><a href="donations-app.html">Making giving feel like play</a></h3>
+            <p>A gamified redesign of the Dubai Charity Association donation app. Projects live in a pixel-art village you explore, and each category has milestones, badges and a leaderboard, so donors can see their impact grow and want to come back.</p>
+            <ul class="facts"><li>Figma</li><li>Gamification</li><li>Mobile UI</li></ul>
+            <a class="more" href="donations-app.html">See the screens</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <img src="images/couch-game.jpg" alt="Character select screen for a four-player couch game">
+          </figure>
+          <div>
+            <div class="kind design"><i></i>Game UI</div>
+            <h3><a href="couch-game.html">Enscherade: UI for a four-player couch game</a></h3>
+            <p>Menus and an end-of-match sequence for a painting battle game for 2 to 4 players, where you win by covering the most ground in your colour, using each character’s own powers. Everything had to be readable from a sofa, by four people sharing one screen.</p>
+            <ul class="facts"><li>Figma</li><li>Multiplayer UI</li><li>Controller input</li></ul>
+            <a class="more" href="couch-game.html">See the screens</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="800" height="500" fill="#251f2a"/>
+              <rect x="70" y="60" width="660" height="380" rx="6" fill="#1c1822" stroke="#6b5a3e" stroke-width="2"/>
+              <rect x="82" y="72" width="636" height="356" rx="4" fill="none" stroke="#6b5a3e" stroke-dasharray="2 6"/>
+              <g fill="#3a3140"><rect x="110" y="100" width="90" height="12" rx="3"/><rect x="220" y="100" width="70" height="12" rx="3"/><rect x="310" y="100" width="80" height="12" rx="3"/><rect x="410" y="100" width="90" height="12" rx="3"/></g>
+              <rect x="220" y="100" width="70" height="12" rx="3" fill="#c9a86a"/>
+              <g fill="#2e2735" stroke="#6b5a3e"><rect x="110" y="150" width="54" height="54" rx="4"/><rect x="110" y="214" width="54" height="54" rx="4"/><rect x="110" y="278" width="54" height="54" rx="4"/><rect x="110" y="342" width="54" height="54" rx="4"/></g>
+              <g><rect x="180" y="150" width="230" height="40" rx="4" fill="#4a3d2c"/><rect x="180" y="200" width="230" height="40" rx="4" fill="#3b3449"/><rect x="180" y="250" width="230" height="40" rx="4" fill="#4a3046"/></g>
+              <rect x="470" y="150" width="220" height="250" rx="6" fill="#d9c9a3" opacity=".9"/>
+              <g fill="#8a7550"><rect x="490" y="175" width="120" height="10" rx="3"/><rect x="490" y="200" width="170" height="6" rx="3"/><rect x="490" y="214" width="150" height="6" rx="3"/><rect x="490" y="228" width="160" height="6" rx="3"/></g>
+              <circle cx="580" cy="320" r="34" fill="none" stroke="#8a7550" stroke-width="3"/>
+            </svg>
+            <img src="images/historical-menu.jpg" alt="Historical game menu: weapons, armour and skill tree screens" onerror="this.parentElement.querySelector('.note')?.remove();this.remove()">
+            <figcaption class="note">Character and background: God of War, used as a placeholder. The UI is my own.</figcaption>
+          </figure>
+          <div>
+            <div class="kind design"><i></i>Game UI</div>
+            <h3><a href="game-ui.html">Historical game menu and HUD</a></h3>
+            <p>The interface for a historical action RPG I’d love to make one day: an in-game HUD plus menus for weapons, armour and a skill tree. I wanted every screen to feel like part of the world, with aged paper, carved frames and manuscript art instead of a modern layer on top.</p>
+            <ul class="facts"><li>Figma</li><li>Photoshop</li><li>HUD and menus</li><li>Clickable prototype</li></ul>
+            <a class="more" href="game-ui.html">See the screens</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <svg class="art" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="800" height="500" fill="#1e2128"/>
+              <g transform="translate(150 50)">
+                <rect width="200" height="400" rx="26" fill="#2b3038" stroke="#3d434d"/>
+                <circle cx="100" cy="150" r="64" fill="none" stroke="#3d434d" stroke-width="16"/>
+                <circle cx="100" cy="150" r="64" fill="none" stroke="#e0645c" stroke-width="16" stroke-dasharray="250 402" transform="rotate(-90 100 150)"/>
+                <circle cx="100" cy="150" r="64" fill="none" stroke="#3fb68b" stroke-width="16" stroke-dasharray="90 402" stroke-dashoffset="-255" transform="rotate(-90 100 150)"/>
+                <rect x="24" y="250" width="152" height="30" rx="6" fill="#d6a63a"/><rect x="24" y="290" width="152" height="30" rx="6" fill="#3d434d"/><rect x="24" y="330" width="152" height="30" rx="6" fill="#3d434d"/>
+              </g>
+              <g transform="translate(450 90)">
+                <rect width="200" height="320" rx="22" fill="#2b3038" stroke="#3d434d"/>
+                <path d="M20 240 L50 200 L80 215 L110 160 L140 175 L180 120 L180 280 L20 280Z" fill="#d6a63a" opacity=".55"/>
+                <rect x="20" y="30" width="120" height="14" rx="7" fill="#3d434d"/>
+              </g>
+            </svg>
+            <img src="images/energy-app.jpg" alt="Screens from the power consumption app" onerror="this.remove()">
+          </figure>
+          <div>
+            <div class="kind both"><i></i><i></i>UX & data</div>
+            <h3><a href="energy-app.html">Energy use, made readable</a></h3>
+            <p>A mobile app that shows a household where its power goes: per room, per device and per hour of the day, with hourly rates so people can see when power is cheapest. The design challenge was making numbers feel simple.</p>
+            <ul class="facts"><li>Figma</li><li>Hi-fi UI</li><li>Data visualisation</li></ul>
+            <a class="more" href="energy-app.html">See the screens</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <figure class="cover" style="margin:0">
+            <img src="images/fridge-app.jpg" alt="Screens from the digital fridge app: fridge contents, daily recipes, a recipe and a profile with food savings">
+          </figure>
+          <div>
+            <div class="kind both"><i></i><i></i>UX & data</div>
+            <h3><a href="fridge-app.html">A fridge that tells you what to cook</a></h3>
+            <p>An app that helps households waste less food. It knows what’s in your fridge and when it expires, suggests recipes that use it up, and rewards you with a streak for every day nothing gets thrown away.</p>
+            <ul class="facts"><li>Figma</li><li>Mobile UI</li><li>Behaviour design</li></ul>
+            <a class="more" href="fridge-app.html">See the screens</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="also">
+        <h3>Also made</h3>
+        <ul>
+          <li><strong><a href="https://kayteee.itch.io/bovi" target="_blank" rel="noopener">Bovi, a shy virtual pet</a></strong><span>Unity game, with a playtest survey I designed</span></li>
+          <li><strong><a href="game-ui.html#ar-cards">AR tower defence cards</a></strong><span>Hand-painted unit cards with upgrade costs</span></li>
+          <li><strong><a href="https://vimeo.com/841618108" target="_blank" rel="noopener">For the Turtles</a></strong><span>Beach-cleaning high-score game, team project</span></li>
+          <li><strong><a href="https://www.figma.com/file/3aMguWgVDqIAxqevTffSpc/" target="_blank" rel="noopener">Shooter HUD</a></strong><span>First-person shooter interface concept</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <div>
+        <h2>About me</h2>
+        <p style="margin-top:1.25rem">I’m Katrīna, KayTee for short. I study Creative Media and Game Technologies at Saxion and I like both sides of making games: designing what the player sees, and organising how the team gets there.</p>
+        <p>I grew up on stage. Six years of theatre, a role in the film <em>Namejs’ Ring</em>, commercials and a Dragons’ Den pitch taught me to explain an idea to any room, whether that’s a design decision for an artist or the numbers for management.</p>
+        <p>In my internship at Denda Games, I turned a vague brief into a working system for 18 people. Afterwards I started my own company to keep improving it, and Denda is still my client.</p>
+      </div>
+      <dl class="facts-table">
+        <dt>Studying</dt><dd>Creative Media and Game Technologies, Saxion University of Applied Sciences, final year</dd>
+        <dt>Based in</dt><dd>Enschede, the Netherlands. Happy to move anywhere in Europe.</dd>
+        <dt>Looking for</dt><dd>A graduation internship from January or February 2027, in game design, UI/UX, production or data</dd>
+        <dt>Design tools</dt><dd>Figma, Photoshop, Unity</dd>
+        <dt>Production tools</dt><dd>Trello, Notion, Make, Google Sheets, Excel, Apps Script</dd>
+        <dt>Languages</dt><dd>Latvian (native), English (fluent), Dutch (basic)</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="offclock" style="padding-top:2.5rem;padding-bottom:2.5rem">
+    <div class="wrap">
+      <details class="offclock">
+        <summary>Off the clock: paintings, drawings and 3D</summary>
+        <div class="art-strip" id="art-strip">
+          <figure><img src="images/art/1.jpg" alt="Tiger, acrylic on canvas"></figure>
+          <figure><img src="images/art/2.jpg" alt="Hands on a bass guitar, pencil drawing"></figure>
+          <figure><img src="images/art/3.jpg" alt="Woman by a window, oil painting"></figure>
+          <figure><img src="images/art/4.jpg" alt="Exhibition poster designed in Photoshop"></figure>
+          <figure><img src="images/art/5.jpg" alt="Fox pattern drawing"></figure>
+          <figure><img src="images/art/6.jpg" alt="Tree house, 3D model"></figure>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2><a class="mail" href="mailto:katrina.taupmane@gmail.com">Let’s talk.</a></h2>
+      <p style="margin-top:1.25rem;color:var(--muted)">The quickest way to reach me is email. I usually reply within a day.</p>
+      <div class="links">
+        <a href="mailto:katrina.taupmane@gmail.com">katrina.taupmane@gmail.com</a>
+        <a href="https://www.linkedin.com/in/katr%C4%ABna-taupmane-008142236" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Katrīna Taupmane</span>
+    <span>Designed and planned by KayTee</span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

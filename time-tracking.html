@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time tracking for a game studio — Katrīna Taupmane</title>
+<meta name="description" content="How I built automatic time tracking on top of Trello for Denda Games, a team of 18.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317141f'/%3E%3Crect x='7' y='8' width='8' height='16' rx='2' fill='%23b9a6e8'/%3E%3Crect x='17' y='8' width='8' height='10' rx='2' fill='%2384c9b8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="case">
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./">Kay<span>Tee</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="./#work">Work</a>
+      <a href="./#studios" class="hide-sm">For studios</a>
+      <a href="./#about">About</a>
+      <a href="./#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="case-hero">
+    <div class="wrap">
+      <div class="kind prod"><i></i>Production & data</div>
+      <h1>Time tracking that runs itself, for a game studio of 18</h1>
+      <p class="lede">Denda Games planned everything in Trello but had no idea how long anything actually took. I built a system that turns the boards they already used into daily reports for management.</p>
+      <dl class="case-meta">
+        <div><dt>Client</dt><dd>Denda Games, Hengelo</dd></div>
+        <div><dt>My role</dt><dd>Project management intern, now freelance through KTS</dd></div>
+        <div><dt>When</dt><dd>February 2026 until now</dd></div>
+        <div><dt>Tools</dt><dd>Trello, Make, Google Sheets, Apps Script, Notion</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap two">
+      <h2>The problem</h2>
+      <div>
+        <p>Denda Games is a studio that ports games to new platforms and builds web games for clients. My brief was broad: improve how the team works. When I looked closer, one thing was missing completely. There was no time tracking, so estimates for new projects were based on gut feeling.</p>
+        <p>Asking 18 busy people to start and stop timers was never going to last. Whatever I built had to work with what they already did every day: moving cards on Trello boards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="two">
+        <h2>How it works</h2>
+        <div>
+          <p>Moving a card is the only thing anyone has to do. Everything after that happens on its own.</p>
+        </div>
+      </div>
+      <ol class="pipeline">
+        <li><strong>Trello</strong><span>The team moves cards as usual. Six boards are tracked.</span></li>
+        <li><strong>Make</strong><span>Scenarios log every card that enters or leaves “In progress”, with who and when.</span></li>
+        <li><strong>Google Sheets</strong><span>Sessions become hours, checked against each person’s working hours, holidays and leave.</span></li>
+        <li><strong>Apps Script</strong><span>After every working day, a script builds a report per board and per person.</span></li>
+        <li><strong>Email</strong><span>Management gets the report, plus a morning email about who is absent.</span></li>
+      </ol>
+      <figure class="shot"><img src="images/make-scenario.jpg" alt="One of the Make scenarios that logs Trello card moves" onerror="this.parentElement.remove()"><figcaption>One of the Make scenarios I built.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <h2>What the report shows</h2>
+      <div>
+        <ul class="plain">
+          <li>What each person worked on and for how long</li>
+          <li>Gaps of more than 15 minutes where someone had no task in progress</li>
+          <li>Tasks that are still open at the end of the day</li>
+          <li>Estimated hours compared with the hours actually counted, so over- and underestimates stand out</li>
+        </ul>
+        <p class="callout">The real data and reports are confidential under my contract, so what you see here is the structure and sample data, not Denda’s numbers.</p>
+        <figure class="shot"><img src="images/sample-sheet.jpg" alt="Sample version of the time-tracking sheet with made-up data" onerror="this.parentElement.remove()"><figcaption>The tracking sheet, filled with sample data.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <h2>Beyond the numbers</h2>
+      <div>
+        <p>Data only helps if people can find it. In the second half of my internship I also rebuilt Denda’s Notion workspace: a cleaner onboarding page, a landing page for future interns, and a dashboard for employees where sensitive project details stay hidden from guests.</p>
+        <p>I presented my findings and proposals to management along the way and explained each workflow change to the team, so the system was something people understood, not something done to them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <h2>Result</h2>
+      <div>
+        <p>Denda now has real data behind its estimates, and it’s used every day through the reports, not just stored. When my internship ended, the company asked me to stay on. I registered my own company, KTS (KayTSolutions), in July 2026, and Denda is still my client: I make changes and improvements whenever they ask.</p>
+        <p class="callout">What I learned: a vague brief is an opportunity. Asking the right questions and building something small that works teaches you more than waiting for a perfect plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap next-case">
+      <a href="./">Back to all work</a>
+      <a href="vr-physio.html">Next: VR physio game</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Katrīna Taupmane</span>
+    <a href="mailto:katrina.taupmane@gmail.com">katrina.taupmane@gmail.com</a>
+  </div>
+</footer>
+</body>
+</html>
